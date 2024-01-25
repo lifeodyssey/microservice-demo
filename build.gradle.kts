@@ -8,7 +8,9 @@ plugins {
     id("org.springframework.boot") version "3.1.3"
     id("io.spring.dependency-management") version "1.1.3"
     id("org.jetbrains.kotlin.jvm") version "1.9.0"
+    id("org.jetbrains.kotlin.plugin.noarg") version "1.9.0"
     id("org.jetbrains.kotlin.plugin.spring") version "1.9.0"
+    id("org.jetbrains.kotlin.plugin.jpa") version "1.9.0"
     id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
     id("it.nicolasfarabegoli.conventional-commits") version "3.1.3"
     id("org.owasp.dependencycheck") version "8.4.0"
@@ -17,6 +19,9 @@ plugins {
     jacoco
     application
     idea
+}
+noArg {
+    annotation("jakarta.persistence.Entity")
 }
 configurations {
     compileOnly {
@@ -37,6 +42,8 @@ allprojects {
     apply(plugin = "it.nicolasfarabegoli.conventional-commits")
     apply(plugin = "org.owasp.dependencycheck")
     apply(plugin = "org.sonarqube")
+    apply(plugin = "org.jetbrains.kotlin.plugin.noarg")
+    apply(plugin = "org.jetbrains.kotlin.plugin.jpa")
 
     dependencyManagement {
         imports {

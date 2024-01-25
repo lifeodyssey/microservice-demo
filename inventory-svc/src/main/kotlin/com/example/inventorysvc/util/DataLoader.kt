@@ -10,7 +10,7 @@ class DataLoader(private val inventoryRepository: InventoryRepository) : Command
 
     override fun run(vararg args: String?) {
         val inventory = Inventory(skuCode = "xiaomi_14_black", quantity = 999)
-        val inventory1 = Inventory(skuCode = "xiaomi_14_snowy_mountain_pink", quantity = 666)
+        val inventory1 = Inventory(skuCode = "xiaomi_14_snowy_mountain_pink", quantity = 0)
 
         inventoryRepository.save(inventory)
         inventoryRepository.save(inventory1)

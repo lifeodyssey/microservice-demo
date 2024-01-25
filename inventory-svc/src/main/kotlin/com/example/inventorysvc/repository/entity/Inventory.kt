@@ -7,11 +7,11 @@ import jakarta.persistence.Id
 import jakarta.persistence.Table
 
 @Entity
- @Table
- data class Inventory(
+@Table
+data class Inventory(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
     val skuCode: String,
     var quantity: Int
- )
+)
