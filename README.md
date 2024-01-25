@@ -6,4 +6,6 @@ Work In Progress:
 - [ ] Exception handling
 - [ ] Logging
 - [ ] DB Setup
+- [ ] DB Migration 
 - [ ] Test
+- 
