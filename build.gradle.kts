@@ -117,12 +117,16 @@ allprojects {
             // kotlin test
             implementation("org.testng:testng:7.7.0")
             testImplementation(kotlin("test"))
-            testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring30x:4.6.1")
             testImplementation("io.mockk:mockk:1.13.4")
             testImplementation("com.ninja-squad:springmockk:4.0.0")
             testImplementation("org.springframework.boot:spring-boot-starter-test") {
                 exclude(module = "mockito-core")
             }
+            testImplementation ("org.testcontainers:testcontainers:1.19.3")
+            testImplementation("org.testcontainers:junit-jupiter:1.19.3")
+            testImplementation("org.testcontainers:mongodb:1.19.3")
+
+
             // mongodb migration
             implementation("io.mongock:mongock-springboot:5.2.2")
             implementation("io.mongock:mongodb-springdata-v4-driver:5.2.1")
