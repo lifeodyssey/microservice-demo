@@ -4,10 +4,8 @@ import com.example.productsvc.controller.dto.ProductRequest
 import com.example.productsvc.controller.dto.ProductResponse
 import com.example.productsvc.repository.ProductRepository
 import com.example.productsvc.repository.entity.Product
-import java.util.function.Function
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
-
 
 @Service
 class ProductService(private val productRepository: ProductRepository) {

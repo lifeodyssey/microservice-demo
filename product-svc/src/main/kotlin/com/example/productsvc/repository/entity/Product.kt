@@ -1,8 +1,8 @@
 package com.example.productsvc.repository.entity
 
-import java.math.BigDecimal
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
+import java.math.BigDecimal
 
 @Document("product")
 data class Product(

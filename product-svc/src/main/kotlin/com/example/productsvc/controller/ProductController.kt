@@ -26,5 +26,4 @@ class ProductController(private val productService: ProductService) {
     fun getAllProducts(): List<ProductResponse> {
         return productService.getAllProducts()
     }
-
 }

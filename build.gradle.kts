@@ -93,7 +93,8 @@ allprojects {
             implementation("org.springframework.boot:spring-boot-starter-actuator")
             implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
             implementation("org.springframework.boot:spring-boot-starter-web")
-            implementation("org.springframework.boot:spring-boot-starter:3.1.0")
+
+            implementation("org.springframework.boot:spring-boot-starter:3.1.3")
             implementation("org.springframework.boot:spring-boot-starter-validation")
             implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 //
@@ -124,19 +125,16 @@ allprojects {
             }
             testImplementation ("org.testcontainers:testcontainers:1.19.3")
             testImplementation("org.testcontainers:junit-jupiter:1.19.3")
-            testImplementation("org.testcontainers:mongodb:1.19.3")
 
-
-            // mongodb migration
-            implementation("io.mongock:mongock-springboot:5.2.2")
-            implementation("io.mongock:mongodb-springdata-v4-driver:5.2.1")
-            implementation("io.mongock:mongock-springboot-v3:5.2.1")
 
             integrationTestImplementation("org.springframework.cloud:spring-cloud-contract-wiremock")
             annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
             // grpc
             implementation(kotlin("script-runtime"))
+            // my sql
+            implementation("com.mysql:mysql-connector-j:8.3.0")
+
         }
 
         repositories {

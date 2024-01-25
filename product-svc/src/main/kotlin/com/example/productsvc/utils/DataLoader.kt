@@ -2,9 +2,9 @@ package com.example.productsvc.utils
 
 import com.example.productsvc.repository.ProductRepository
 import com.example.productsvc.repository.entity.Product
-import java.math.BigDecimal
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Component
+import java.math.BigDecimal
 
 @Component
 class DataLoader(private val productRepository: ProductRepository) : CommandLineRunner {
