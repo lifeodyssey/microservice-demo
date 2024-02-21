@@ -19,7 +19,7 @@ class OrderController(private val orderService: OrderService) {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    fun placeOrder(@RequestBody orderRequest: OrderRequest) {
+    fun placeOrder(@RequestBody orderRequest: OrderRequest):String {
         log.info("Placing Order")
         return orderService.placeOrder(orderRequest)
     }
