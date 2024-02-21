@@ -8,4 +8,4 @@ Work In Progress:
 - [ ] DB Setup
 - [ ] DB Migration 
 - [ ] Test
-- 
+- [ ] Extract mapper between entity and dto
