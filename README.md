@@ -9,3 +9,4 @@ Work In Progress:
 - [ ] DB Migration 
 - [ ] Test
 - [ ] Extract mapper between entity and dto
+- [ ] Use etcd to do service discovery
