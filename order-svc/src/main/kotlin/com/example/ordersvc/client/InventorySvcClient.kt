@@ -5,10 +5,11 @@ import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 
-@FeignClient(name = "inventory-svc", url = "http://localhost:8082/api/inventory")
+@FeignClient(name = "inventory-svc", url = "http:/inventory-service/api/inventory")
 
 interface InventorySvcClient {
     @GetMapping
     fun isInStock(@RequestParam("skuCode") skuCodes: List<String>): List<InventoryResponse>
 
 }
+//Feign Client have client side service discovery load balancer in default
