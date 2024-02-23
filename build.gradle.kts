@@ -98,7 +98,6 @@ allprojects {
             implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
 //    Spring Boot
             implementation("org.springframework.boot:spring-boot-starter-actuator")
-            implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
             implementation("org.springframework.boot:spring-boot-starter-web")
 
             implementation("org.springframework.boot:spring-boot-starter:3.1.3")
@@ -139,9 +138,6 @@ allprojects {
 
             // grpc
             implementation(kotlin("script-runtime"))
-            // my sql
-            implementation("com.mysql:mysql-connector-j:8.3.0")
-
         }
 
         repositories {
